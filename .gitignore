@@ -9,6 +9,8 @@
 build-*/
 debug*/
 release*/
+Phammemquanlysv/build/
+
 *.o
 *.obj
 *.a
@@ -29,7 +31,12 @@ CMakeFiles/
 CMakeCache.txt
 cmake-build-*/
 compile_commands.json
+*.ninja
+qtsettings.cmake
 
 # Others
 *.log
 .DS_Store
+
+# Local project folders to ignore
+Phammemquanlysv/
