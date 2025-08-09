@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug C++ Project",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.exe", // File thực thi
+            "args": [],                                // Tham số dòng lệnh nếu cần
+            "stopAtEntry": false,                     // Không dừng tại điểm bắt đầu
+            "cwd": "${workspaceFolder}",              // Thư mục làm việc
+            "environment": [],
+            "externalConsole": false,                 // Sử dụng terminal tích hợp
+            "MIMode": "gdb",                          // Sử dụng GDB để debug
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build C++ Project"       // Chạy task build trước khi debug
+        }
+    ]
+}

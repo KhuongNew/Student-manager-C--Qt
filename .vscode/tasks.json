@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++ Project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",          // Sử dụng chuẩn C++17
+                "-Wall",              // Hiển thị cảnh báo
+                "-g",                 // Thêm thông tin debug
+                "*.cpp",              // Build tất cả các file .cpp trong thư mục hiện tại
+                "-o",                 // Tên file thực thi
+                "main.exe"            // File thực thi
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true     // Đặt task này làm mặc định
+            },
+            "problemMatcher": ["$gcc"], // Tích hợp thông báo lỗi với GCC
+            "detail": "Build all C++ source files into main.exe"
+        }
+    ]
+}

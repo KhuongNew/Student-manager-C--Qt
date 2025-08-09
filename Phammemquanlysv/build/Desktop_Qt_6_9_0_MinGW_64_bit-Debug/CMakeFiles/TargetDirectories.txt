@@ -1,0 +1,9 @@
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/Phammemquanlysv.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/Phammemquanlysv_autogen_timestamp_deps.dir
+C:/LAM/c++/ly thuyet va bai tap/ly thuyet/ctdl_gt/DoAn/Phammemquanlysv/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/Phammemquanlysv_autogen.dir

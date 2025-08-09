@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow, QWidget {
+    background-color: #F4F6F8;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+    color: #2C3E50; 
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="3">
+       <widget class="QPushButton" name="pushButton_ok_timkiem">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Tìm Kiếm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="pushButton_ok_sapxep">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Sắp Xếp</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEdit_TimKiem">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #F1FAEE, stop: 1 #E0F7FA
+    );
+    border: 1.5px solid #B0BEC5;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font: bold 14px &quot;Segoe UI&quot;;          
+    color: #2C3E50;                     
+    selection-background-color: #D6EAF8;
+    selection-color: #2C3E50;
+}
+
+QLineEdit:focus {
+    border: 1.5px solid #2C7DA0;
+    background: #FFFFFF;
+}
+QLineEdit[echoMode=&quot;0&quot;]::placeholder {
+    color: #AAB2BD;
+    font-style: italic;
+}
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_ChuongTrinh">
+        <property name="styleSheet">
+         <string notr="true">QLabel#label_ChuongTrinh {
+    font: bold 20px &quot;Segoe UI&quot;;
+qproperty-alignment: AlignCenter; 
+    color: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #48C9B0
+    );
+}
+</string>
+        </property>
+        <property name="text">
+         <string>HỆ THỐNG QUẢN LÝ SINH VIÊN</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_timkiem">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #E0F7FA, stop: 1 #F1FAEE
+    );
+    border: 1.5px solid #B0BEC5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font: bold 14px &quot;Segoe UI&quot;;          
+    color: #2C3E50;
+}
+
+QComboBox:hover {
+    border: 1.5px solid #2C7DA0;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D9F0F7, stop: 1 #ECFFF6
+    );
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border-left: 1px solid #B0BEC5;
+    background-color: #D6EAF8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/arrow-down.png); 
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    selection-background-color: #B5D8F3;
+    selection-color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    font: bold 14px &quot;Segoe UI&quot;;         
+    outline: none;
+    padding: 4px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Nhị Phân</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Vét Cạn</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_sapxep">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #E0F7FA, stop: 1 #F1FAEE
+    );
+    border: 1.5px solid #B0BEC5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font: bold 14px &quot;Segoe UI&quot;;          
+    color: #2C3E50;
+}
+
+QComboBox:hover {
+    border: 1.5px solid #2C7DA0;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D9F0F7, stop: 1 #ECFFF6
+    );
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border-left: 1px solid #B0BEC5;
+    background-color: #D6EAF8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/arrow-down.png); 
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    selection-background-color: #B5D8F3;
+    selection-color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    font: bold 14px &quot;Segoe UI&quot;;         
+    outline: none;
+    padding: 4px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Bubble Sort</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Insertion Sort</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Selection Sort</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Merge Sort</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Quick Sort</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Heap Sort</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="comboBox_tieuchi_timkiem">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #E0F7FA, stop: 1 #F1FAEE
+    );
+    border: 1.5px solid #B0BEC5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font: bold 14px &quot;Segoe UI&quot;;          
+    color: #2C3E50;
+}
+
+QComboBox:hover {
+    border: 1.5px solid #2C7DA0;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D9F0F7, stop: 1 #ECFFF6
+    );
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border-left: 1px solid #B0BEC5;
+    background-color: #D6EAF8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/arrow-down.png); 
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    selection-background-color: #B5D8F3;
+    selection-color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    font: bold 14px &quot;Segoe UI&quot;;         
+    outline: none;
+    padding: 4px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Mã Sinh Viên</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Họ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tên</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lớp</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Điểm</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QComboBox" name="comboBox_tieuchi_sapxep">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #E0F7FA, stop: 1 #F1FAEE
+    );
+    border: 1.5px solid #B0BEC5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font: bold 14px &quot;Segoe UI&quot;;          
+    color: #2C3E50;
+}
+
+QComboBox:hover {
+    border: 1.5px solid #2C7DA0;
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D9F0F7, stop: 1 #ECFFF6
+    );
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border-left: 1px solid #B0BEC5;
+    background-color: #D6EAF8;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/arrow-down.png); 
+    width: 12px;
+    height: 12px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #FFFFFF;
+    selection-background-color: #B5D8F3;
+    selection-color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    font: bold 14px &quot;Segoe UI&quot;;         
+    outline: none;
+    padding: 4px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Mã Sinh Viên</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tên</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Điểm</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_tong">
+      <item>
+       <widget class="QGroupBox" name="groupBox_nutbam">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    font: 13px &quot;Segoe UI&quot;;
+    color: #2C3E50;
+    padding: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 4px 10px;
+    background-color: transparent;
+    font: bold 14px &quot;Segoe UI&quot;;     
+    color: #2C7DA0;
+}
+</string>
+        </property>
+        <property name="title">
+         <string>Chức Năng Chính</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_in">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>In</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_them">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Thêm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_xoa">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Xóa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_sua">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Sửa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_file">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Tải File</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_diemthap">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Điểm Thấp Nhất</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_diemcao">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Điểm Cao Nhất</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_trungbinh">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Trung Bình</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_Daoten">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px 24px;
+}
+QPushButton:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+QPushButton:pressed {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Đảo Tên</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_tab">
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>-1</pointsize>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTabWidget::pane {
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    background-color: #F4F6F8;
+    padding: 5px;
+}
+QTabBar::tab {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #2C7DA0, stop: 1 #4FBDBA
+    );
+    color: white;
+    border: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 8px 18px;
+    font: bold 13px &quot;Segoe UI&quot;;
+    margin-right: 2px;
+}
+QTabBar::tab:selected {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #D98E73, stop: 1 #FFE6A7
+    );
+    color: #2C3E50;
+    font: bold 14px &quot;Segoe UI&quot;;
+    border: 2px solid #E6B87A;
+}
+QTabBar::tab:hover {
+    background: qlineargradient(
+        x1: 0, y1: 0, x2: 1, y2: 0,
+        stop: 0 #368DB2, stop: 1 #6FDCD1
+    );
+}
+</string>
+          </property>
+          <property name="currentIndex">
+           <number>3</number>
+          </property>
+          <widget class="QWidget" name="tab_mang">
+           <attribute name="title">
+            <string>Mảng</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_mang">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>-1</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableWidget {
+    background-color: #F9FAFB;
+    alternate-background-color: #EEF4F7;
+    gridline-color: #D0D7DE;
+    color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    border-radius: 6px;
+    font: 13px &quot;Segoe UI&quot;;
+    selection-background-color: #D6EAF8;
+    selection-color: #2C3E50;
+}
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+QTableWidget::item:alternate {
+    background-color: #EEF4F7;
+}
+QTableWidget::item:hover {
+    background-color: #E0F3F9;
+}
+QHeaderView::section {
+    background-color: #2C7DA0;
+    color: white;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #B0BEC5;
+}
+QTableCornerButton::section {
+    background-color: #2C7DA0;
+    border: none;
+}
+QTableWidget::item:selected {
+    background-color: #A5D6F9;    
+    color: #1A2930;
+    font-weight: bold;
+}
+</string>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Mã Sinh Viên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Họ</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Tên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Lớp</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Điểm</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_dslkd">
+           <attribute name="title">
+            <string>Danh sách liên kết đơn</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_dslkd">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>-1</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableWidget {
+    background-color: #F9FAFB;
+    alternate-background-color: #EEF4F7;
+    gridline-color: #D0D7DE;
+    color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    border-radius: 6px;
+    font: 13px &quot;Segoe UI&quot;;
+    selection-background-color: #D6EAF8;
+    selection-color: #2C3E50;
+}
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+QTableWidget::item:alternate {
+    background-color: #EEF4F7;
+}
+QTableWidget::item:hover {
+    background-color: #E0F3F9;
+}
+QHeaderView::section {
+    background-color: #2C7DA0;
+    color: white;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #B0BEC5;
+}
+QTableCornerButton::section {
+    background-color: #2C7DA0;
+    border: none;
+}
+QTableWidget::item:selected {
+    background-color: #A5D6F9;    
+    color: #1A2930;
+    font-weight: bold;
+}
+</string>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Mã Sinh Viên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Họ</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Tên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Lớp</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Điểm</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_dslkv">
+           <attribute name="title">
+            <string>Danh sách liên kết vòng</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_dslkv">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>-1</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableWidget {
+    background-color: #F9FAFB;
+    alternate-background-color: #EEF4F7;
+    gridline-color: #D0D7DE;
+    color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    border-radius: 6px;
+    font: 13px &quot;Segoe UI&quot;;
+    selection-background-color: #D6EAF8;
+    selection-color: #2C3E50;
+}
+QTableWidget::item {
+    font: bold 13px &quot;Segoe UI&quot;;
+}
+QTableWidget::item:alternate {
+    background-color: #EEF4F7;
+}
+QTableWidget::item:hover {
+    background-color: #E0F3F9;
+}
+QTableWidget::item:selected {
+    background-color: #A5D6F9;    
+    color: #1A2930;
+    font-weight: bold;
+}
+QHeaderView::section {
+    background-color: #2C7DA0;
+    color: white;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #B0BEC5;
+}
+QTableCornerButton::section {
+    background-color: #2C7DA0;
+    border: none;
+}</string>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Mã Sinh Viên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Họ</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Tên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Lớp</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Điểm</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_dslkk">
+           <attribute name="title">
+            <string>Danh sách liên kết kép</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QTableWidget" name="tableWidget_dslkk">
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>-1</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTableWidget {
+    background-color: #F9FAFB;
+    alternate-background-color: #EEF4F7;
+    gridline-color: #D0D7DE;
+    color: #2C3E50;
+    border: 1px solid #B0BEC5;
+    border-radius: 6px;
+    font: 13px &quot;Segoe UI&quot;;
+    selection-background-color: #D6EAF8;
+    selection-color: #2C3E50;
+}
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+QTableWidget::item:alternate {
+    background-color: #EEF4F7;
+}
+QTableWidget::item:hover {
+    background-color: #E0F3F9;
+}
+QHeaderView::section {
+    background-color: #2C7DA0;
+    color: white;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 6px;
+    border: none;
+    border-right: 1px solid #B0BEC5;
+}
+QTableCornerButton::section {
+    background-color: #2C7DA0;
+    border: none;
+}
+QTableWidget::item:selected {
+    background-color: #A5D6F9;    
+    color: #1A2930;
+    font-weight: bold;
+}
+</string>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+              </property>
+              <attribute name="verticalHeaderVisible">
+               <bool>true</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Mã Sinh Viên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Họ</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Tên</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Lớp</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Điểm</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionG">
+   <property name="text">
+    <string>Gà</string>
+   </property>
+  </action>
+  <action name="actionNon">
+   <property name="text">
+    <string>Non</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

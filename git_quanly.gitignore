@@ -1,0 +1,35 @@
+# Qt Creator / qmake
+*.pro.user
+*.pri.user
+*.qbs.user
+*.qmake.stash
+*.autosave
+
+# Build artifacts
+build-*/
+debug*/
+release*/
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+Makefile
+
+# Qt generated
+moc_*
+ui_*.h
+qrc_*.cpp
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
+
+# Others
+*.log
+.DS_Store
